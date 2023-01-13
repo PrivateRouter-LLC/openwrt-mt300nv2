@@ -1,0 +1,2 @@
+REPO=testing
+export REPO
