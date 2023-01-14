@@ -21,7 +21,7 @@ cd openwrt-*/
 # clean previous images
 make clean
 
-make image  PROFILE="glinet_gl-mt300n" \
+make image  PROFILE="glinet_gl-mt300n-v2" \
           PACKAGES="kmod-rt2800-usb rt2800-usb-firmware kmod-cfg80211 kmod-lib80211 kmod-mac80211 kmod-rtl8192cu \
                      block-mount kmod-fs-ext4 kmod-usb-storage blkid mount-utils luci \
                      kmod-usb-storage kmod-usb-ohci kmod-usb-uhci e2fsprogs fdisk resize2fs dnsmasq" \
