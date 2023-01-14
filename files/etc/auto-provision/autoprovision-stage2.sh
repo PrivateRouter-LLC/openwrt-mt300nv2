@@ -107,7 +107,7 @@ autoprovisionStage2()
 
         cat >${overlay_root}/etc/rc.local <<EOF
 chmod a+x /etc/stage3.sh
-{ bash /etc/stage3 } || exit 1
+{ bash /etc/stage3.sh } || exit 1
 EOF
 
         mkdir -p /var/log/archive
