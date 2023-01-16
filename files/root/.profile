@@ -1,2 +1,2 @@
-REPO=testing
+REPO=main
 export REPO
