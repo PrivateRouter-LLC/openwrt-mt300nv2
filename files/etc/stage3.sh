@@ -44,19 +44,18 @@ while ! is_connected; do
 done
 log_say "Internet connection established"
 
-# Install requirements
-opkg update
-opkg install git git-http jq curl wget wget-ssl
-
 # Cleanup our auto-provision and prepare for first real boot
 [ -d /etc/auto-provision ] && rm -rf /etc/auto-provision
-echo "" > /etc/rc.local
+[ -f /etc/rc.local ] && echo "# Empty by design" > /etc/rc.local
 
 # Download our startup.tar.gz with our startup scripts and load them in
 log_say "Downloading startup.tar.gz"
 wget -q -O /tmp/startup.tar.gz https://github.com/PrivateRouter-LLC/script-repo/raw/main/startup-scripts/startup.tar.gz
 log_say "Extracting startup.tar.gz"
 tar -xzf /tmp/startup.tar.gz -C /etc
+log_say "Enabling our rc.custom startup script"
+/etc/init.d/custom disable
+/etc/init.d/custom enable
 log_say "Running our rc.custom startup script"
 bash /etc/rc.custom
 log_say "We are done with our first boot and should be setup to run correctly!"
