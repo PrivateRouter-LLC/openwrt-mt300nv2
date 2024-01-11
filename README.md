@@ -39,29 +39,75 @@ Upload the .bin firmware:
 Click Update Firmware:
 ![upload firmware](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705000855542.png?raw=true)
 
-
 ## Stage 1: Initial Setup 🛠️
 - Installs minimum packages and partitions USB for storage.
 - Change IP address from static to automatic.
-- Access new OpenWRT menu at http://192.168.1.1. Monitor under system log.
+- Access new OpenWRT menu at http://192.168.8.1. Monitor under system log.
+
+Set your IP back to automatic:
+![switch to automatic IP](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/switch_to_automatic.png?raw=true)
+
+Point your web browser to http://192.168.8.1 and click login:
+https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705000892982.png?raw=true
+
+Navigate to System / status to verify the USB has been partitioned and wait for it to reboot:
+![partition usb](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705000932607.png?raw=true)
 
 ## Stage 2: Internet Connection 🌐
 - Connect router to the internet.
 - Monitor progress under status/system log.
 - Router checks into PrivateRouter GitHub repo, installs necessary packages.
 
+Plug in an internet cable to the WAN port or navigate to Network / Wireless and connect to an existing WiFi network:
+![plug in internet](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/plug_in_internet.png?raw=true)
+
+Stage2 will wait for internet access to be enabled:
+![waiting for internet](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705000978115.png?raw=true)
+
+Once internet is enabled let the install process do it's thing:
+![internet enabled](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705001016356.png?raw=true)
+
+While the install is running you can visit System software and see that your OpenWRT router now has 500mb package storage:
+![500mb package storage](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705001097340.png?raw=true)
+
 ## Stage 3: Finalization 🎉
 - Router verifies package installations and updates.
 - Access 500MB package storage under system/software menu.
 - Installs PrivateRouter theme, TorGuard VPN packages, app store, mesh WiFi, etc.
 
+After the last reboot, wait a few minutes and click refresh. You should see the Argon theme installed:
+![Argon](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705001190710.png?raw=true)
+
+
 ## Benefits of PrivateRouter OpenWRT 🌟
 - Extra storage capability.
 - Custom-built apps for TorGuard VPN's services.
 - batman-adv mesh capabilities for complex local networks.
+- TorGuard WireGuard, OpenVPN, SSTP, Openconnect, V2rayA
+
+Log and and log back into OpenWRT to see the newly installed apps, change your password and have a look around. Once the remaining apps are installed you can add more, because you have 500mb app storage space:
+![apps](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705001293512.png?
+
+You can now enable V2rayA if required:
+![V2ray](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705001318068.png?raw=true)
+
+Enable/Disable WiFi under Network/Wireless
+![wifi](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705001337000.png?raw=true)
+
+If your Gli WiFi router supports Mesh, Batman-adv will be installed:
+![mesh](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705001375186.png?raw=true)
+
+Built in TorGuard VPN Wireguard, OpenVPN, SSTP, OpenConnect:
+![built in VPN](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705001250334.png?raw=true)
 
 ## Additional Apps and Features 🔧
 - Install apps from the app menu or System/software menu.
 - Mainline OpenWRT repo apps available.
 
+Install any app with OpenWRT support:
+![software](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705001398395.png?raw=true)
+
 🎊 Congratulations! Your GL.iNet WiFi router now surpasses its intended capabilities and embraces true open-source spirit. 🚀
+
+# :earth_americas: FLASH THE PLANET!!!! :earth_americas:
+
