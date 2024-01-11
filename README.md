@@ -4,7 +4,7 @@ Welcome to the repository housing build files for our OpenWRT image for GL.iNet 
 
 ## Purchase Options 🛒
 - Get a pre-flashed GL.iNet router from [PrivateRouter.com](https://privaterouter.com)
-- Flash it yourself following this guide.
+- Or flash it yourself by following this guide.
 
 ## Why PrivateRouter OpenWRT vs Vanilla OpenWRT? 🤔
 - Regularly updated mainline OpenWRT builds.
@@ -13,11 +13,10 @@ Welcome to the repository housing build files for our OpenWRT image for GL.iNet 
 
 ## Requirements 📋
 - GL.iNet Router (any model)
-- x1 USB drives for additional storage
+- 1x USB drive for additional storage
 - Storage enables running apps like V2ray, OpenVPN, WireGuard, SSTP, OpenConnect, etc.
   
 ![requirements](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/requirements.png?raw=true)
-
 
 ## Setup Your Environment 🖥️
 - Tutorial uses Windows (similar for MacOS/Linux).
@@ -28,7 +27,7 @@ Welcome to the repository housing build files for our OpenWRT image for GL.iNet 
 
 ## Access GL.iNet Uboot 🔄
 1. Connect computer to router's LAN port.
-2. Hold the reset button on the router for 5 seconds or until the uboot menu appears.
+2. Hold the reset button on the router until the Uboot menu appears, which usually takes about 5 seconds.
 3. Upgrade firmware via uboot (http://192.168.1.1). GL.iNet firmware blocks upgrades, so use uboot.
 
 ![hold reset](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/press_and_hold_reset.png?raw=true)
@@ -42,7 +41,7 @@ Click Update Firmware:
 ## Stage 1: Initial Setup 🛠️
 - Installs minimum packages and partitions USB for storage.
 - Change IP address from static to automatic.
-- Access new OpenWRT menu at http://192.168.8.1. Monitor under system log.
+- Access new OpenWRT menu at http://192.168.8.1. Monitor the system log.
 
 Set your IP back to automatic:
 ![switch to automatic IP](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/switch_to_automatic.png?raw=true)
@@ -61,10 +60,10 @@ Navigate to System / status to verify the USB has been partitioned and wait for 
 Plug in an internet cable to the WAN port or navigate to Network / Wireless and connect to an existing WiFi network:
 ![plug in internet](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/plug_in_internet.png?raw=true)
 
-Stage2 will wait for internet access to be enabled:
+The router will wait for Internet access before proceeding to the next stage:
 ![waiting for internet](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705000978115.png?raw=true)
 
-Once internet is enabled let the install process do it's thing:
+Once internet is enabled, let the install process do its thing:
 ![internet enabled](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705001016356.png?raw=true)
 
 While the install is running you can visit System software and see that your OpenWRT router now has 500mb package storage:
@@ -78,20 +77,19 @@ While the install is running you can visit System software and see that your Ope
 After the last reboot, wait a few minutes and click refresh. You should see the Argon theme installed:
 ![Argon](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705001190710.png?raw=true)
 
-
 ## Benefits of PrivateRouter OpenWRT 🌟
 - Extra storage capability.
 - Custom-built apps for TorGuard VPN's services.
 - batman-adv mesh capabilities for complex local networks.
 - TorGuard WireGuard, OpenVPN, SSTP, Openconnect, V2rayA
 
-Log and and log back into OpenWRT to see the newly installed apps, change your password and have a look around. Once the remaining apps are installed you can add more, because you have 500mb app storage space:
-![apps](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705001293512.png?
+Log out and then log back into OpenWRT to see the newly installed apps, change your password and have a look around. Once the remaining apps are installed, you can add more, because you have 500mb app storage space:
+![apps](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705001293512.png?raw=true)
 
 You can now enable V2rayA if required:
 ![V2ray](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705001318068.png?raw=true)
 
-Enable/Disable WiFi under Network/Wireless
+Enable/Disable WiFi under Network/Wireless:
 ![wifi](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705001337000.png?raw=true)
 
 If your Gli WiFi router supports Mesh, Batman-adv will be installed:
@@ -110,4 +108,3 @@ Install any app with OpenWRT support:
 🎊 Congratulations! Your GL.iNet WiFi router now surpasses its intended capabilities and embraces true open-source spirit. 🚀
 
 # :earth_americas: FLASH THE PLANET!!!! :earth_americas:
-
