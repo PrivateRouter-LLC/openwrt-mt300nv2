@@ -15,6 +15,7 @@ Welcome to the repository housing build files for our OpenWRT image for GL.iNet 
 - GL.iNet Router (any model)
 - x1 USB drives for additional storage
 - Storage enables running apps like V2ray, OpenVPN, WireGuard, SSTP, OpenConnect, etc.
+  
 ![requirements](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/requirements.png?raw=true)
 
 
