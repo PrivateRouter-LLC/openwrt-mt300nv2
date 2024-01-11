@@ -24,10 +24,21 @@ Welcome to the repository housing build files for our OpenWRT image for GL.iNet 
 - Download `sysupgrade.bin` file from this repo.
 - Set computer's IP to static: `192.168.1.2` with netmask `255.255.255.0`.
 
+![set static ip](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/set_static_ip.png?raw=true)
+
 ## Access GL.iNet Uboot 🔄
 1. Connect computer to router's LAN port.
 2. Hold the reset button on the router for 5 seconds or until the uboot menu appears.
 3. Upgrade firmware via uboot (http://192.168.1.1). GL.iNet firmware blocks upgrades, so use uboot.
+
+![hold reset](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/press_and_hold_reset.png?raw=true)
+
+Upload the .bin firmware:
+![choose a file](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705000832586.png?raw=true)
+
+Click Update Firmware:
+![upload firmware](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705000855542.png?raw=true)
+
 
 ## Stage 1: Initial Setup 🛠️
 - Installs minimum packages and partitions USB for storage.
