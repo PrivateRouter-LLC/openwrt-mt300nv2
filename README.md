@@ -48,7 +48,7 @@ Set your IP back to automatic:
 ![switch to automatic IP](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/switch_to_automatic.png?raw=true)
 
 Point your web browser to http://192.168.8.1 and click login:
-https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705000892982.png?raw=true
+![login](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705000892982.png?raw=true)
 
 Navigate to System / status to verify the USB has been partitioned and wait for it to reboot:
 ![partition usb](https://github.com/PrivateRouter-LLC/SelfHostedApps/blob/main/images/screely-1705000932607.png?raw=true)
